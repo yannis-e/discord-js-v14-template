@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --env-file=.env.development index.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'",
-    "start": "node --env-file=.env.production index.js",
+    "start": "NODE_ENV=production node --env-file=.env.production index.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss' -L error",
     "deploy": "node --env-file=.env.production deploy-commands.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'",
     "deploy-dev": "node --env-file=.env.development deploy-commands.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'"
   },
