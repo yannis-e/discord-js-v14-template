@@ -29,4 +29,4 @@ GUILD_ID=your_test_server_id
 - `npm run dev` — Run with prettier logging
 - `npm start` — Run in production
 - `npm deploy-dev` — Deploy the commands to dev
-- `npm deploy-dev` — Deploy the commands to production
+- `npm deploy` — Deploy the commands to production
